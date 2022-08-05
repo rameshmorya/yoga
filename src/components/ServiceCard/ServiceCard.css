@@ -1,0 +1,17 @@
+.serviceCardBox{margin:7px 0; background:#fff;text-align:center;padding:25px 30px;margin-bottom:30px;position:relative;border-radius:8px;overflow:hidden}
+.serviceCardBox .serviceCardBg{position:absolute;top:0;left:0;right:0;bottom:0;width:100%;height:100%;background:linear-gradient(-45deg,#cf11da,#3482fd);z-index:1;opacity:0;display:flex;display:-webkit-flex;align-items: center;justify-content: center;color:#fff; transition:.3s;}
+.serviceCardBox .serviceCardBg em{font-size:200px; opacity:.1;}
+.serviceCardBox .serviceCardItem{position:relative;z-index:2}
+.serviceCardBox .serviceCardFigure{margin-bottom: 15px;}
+.serviceCardBox .serviceCardFigure em{background:#7b6cd5;display:inline-block;width:70px;height:70px;color:#fff;line-height:70px;text-align:center;border-radius:50%;-webkit-animation:pulse 2s cubic-bezier(.66,0,0,1) infinite;animation:pulse 2s cubic-bezier(.66,0,0,1) infinite;box-shadow: 0 0 0 0 rgb(123, 108, 213,.6);font-size:40px;}
+.serviceCardBox .serviceCardTitle{color:#333;font-size:18px;line-height:1.4;font-weight:500;margin:15px 0;letter-spacing:.2px;text-transform:capitalize}
+.serviceCardBox .serviceCardDescription{font-size:15px;line-height:1.7;margin:0;color:#888}
+@-webkit-keyframes pulse {
+to{box-shadow:0 0 0 9px rgba(123,108,213,0)}
+}
+@keyframes pulse {
+to{box-shadow:0 0 0 9px rgba(123,108,213,0)}
+}
+.serviceCardBox:hover .serviceCardBg{opacity:1; transition:.3s;}
+.serviceCardBox:hover .serviceCardFigure em{background: none;animation: none; box-shadow: none;}
+.serviceCardBox:hover .serviceCardTitle,.serviceCardBox:hover .serviceCardDescription{color:#fff}

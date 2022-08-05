@@ -1,0 +1,23 @@
+header{ position: relative; z-index: 9;}
+.header--detached-custom .headerContainer{position:fixed;top:0;left:0;top:-60px;}
+.header--sticky .headerContainer{box-shadow:0 3px 3px 0 rgba(0,0,0,0.10);top:0;transition:box-shadow .25s ease 0.25s,top .25s ease}
+.header--unsticky .headerContainer{transition:box-shadow .25s ease,top .25s ease}
+header .headerContainer{width:100%;height:60px;background:#7b6cd5; display:flex;align-items: center; transition:box-shadow 0 ease,top 0 ease}
+.headerAddressBox{padding:5px 0; background:#7b6cd5;border-bottom:1px solid #333;}
+.headerContactBox{display:flex;align-items: center;}
+.headerContactBox li{margin-right: 15px;}
+.headerContactBox li a{color:#fff;font-size:14px;display: flex; align-items: center;}
+.headerContactBox li a em{margin-right: 8px; font-size:18px;}
+.headerSocialBox{display:flex;align-items: center; justify-content: flex-end;}
+.headerSocialBox li{margin-left: 15px;}
+.headerSocialBox li a{color:#fff;font-size: 18px;}
+
+.headerFlexBox{display:flex;display:-webkit-flex; align-items:center; justify-content: space-between;}
+.logoBox{display: block;}
+.logoBox a{display: block; color: #fff;font-size:28px;font-weight:600;}
+@media screen and (max-width:540px){
+.headerFlexBox{flex-direction: row-reverse;justify-content: flex-end;}
+.logoBox a{font-size:24px;}
+.headerAddressBox{display: none;}
+
+}

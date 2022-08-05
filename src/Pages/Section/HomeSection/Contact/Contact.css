@@ -1,0 +1,14 @@
+.contactBox{padding:70px 0;background:#fff;}
+.contactInfoBox{padding: 30px;height: 100%; background: linear-gradient(-45deg ,#cf11da,#3482fd);border-radius: 8px;}
+.contactBox .contactInfo{display:flex; display:-webkit-flex;}
+.contactBox .contactInfo ~ .contactInfo{margin-top: 30px;}
+.contactBox .contactInfo em{margin-right: 10px; width:50px; height:50px;flex: none;display:flex;display:-webkit-flex; align-items: center;justify-content: center;border:1px solid #999; overflow: hidden;border-radius:100%; color:#fff;font-size:20px;}
+.contactBox .contactInfo label{font-size:14px;display: block; color:#eee;}
+.contactBox .contactInfo strong{font-size:18px;display: block;font-weight: 600; color: #fff; letter-spacing:.24px;}
+.contactBox form label{color:#000;}
+@media screen and (max-width:540px){
+.contactBox form{margin-top: 30px;}
+.contactBox .contactInfo strong{font-size: 16px;}
+.contactInfoBox{padding: 15px;}
+.contactBox .btn{width: 100%;}
+}

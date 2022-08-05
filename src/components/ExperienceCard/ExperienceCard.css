@@ -1,0 +1,17 @@
+
+.yogaList{display:flex;display:-webkit-flex;}
+.yogaList ~ .yogaList{margin-top: 15px;}
+.yogaList .icon{margin-left:10px;width:60px;height:60px;border:1px solid #7b6cd5;background:#7b6cd5;flex:none;display:flex;align-items:center;justify-content:center;color:#fff;font-size:40px;border-radius:100%}
+.yogaList .yogaListBody{padding:0 15px;text-align: right;}
+.yogaList .yogaListBody h3{font-size: 16px;margin-bottom: 5px;color:#333;}
+.yogaListBox.text-right{text-align:right}
+.yogaListBox.rightBox .yogaListBody{text-align: left;}
+.yogaListBox.rightBox .yogaList{flex-direction: row-reverse;}
+
+
+
+@media screen and (max-width:540px){
+.yogaListBox .yogaList{flex-direction: row-reverse;}
+.yogaList .yogaListBody{padding: 0; text-align: left;}
+.yogaList .icon{margin:0 15px 0 0;}
+}

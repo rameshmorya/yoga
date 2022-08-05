@@ -1,0 +1,5 @@
+.scheduleCardBox{padding:20px; margin-bottom:15px}
+.scheduleCardFigure{margin:-20px -20px 0 -20px; border-radius:8px;position: relative;border:1px solid #e8e5f5;box-shadow:0 0 20px 0 rgb(0, 0, 0,.05); overflow: hidden;display: flex;display:-webkit-flex;}
+.scheduleCardItem{padding:15px;text-align:center; margin-top: -30px; position: relative;border:1px solid #e8e5f5;box-shadow:0 0 20px 0 rgb(0, 0, 0,.05); overflow: hidden;background:#fff; border-radius: 8px;}
+.scheduleCardTitle{font-size: 16px;color:#333;}
+.scheduleCardTime{font-size:14px; color:#333;}

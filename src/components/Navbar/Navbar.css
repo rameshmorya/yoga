@@ -1,0 +1,30 @@
+nav{display:block;}
+nav ul{display:flex; display:-webkit-flex; align-items: center;}
+nav ul li{height:100%;}
+nav ul li a{padding:0 30px; display:block;color: #fff; font-size:14px; height:60px; display:flex; display: -webkit-flex; align-items: center; justify-content: center; text-transform: uppercase;}
+.navToggle{align-items:center;justify-content:center;display:none;}
+.navToggle span{position:relative!important}
+.navToggle span,.navToggle span:before,.navToggle span:after{content:'';cursor:pointer;height:2px;width:24px;background:#fff;position:absolute;display:block;border-radius:5px}
+.navToggle span:before{top:-7px}
+.navToggle span:after{bottom:-7px}
+.navToggle span,.navToggle span:before,.navToggle span:after{transition:all 200ms ease-in-out}
+.navToggle.active span{background-color:transparent}
+.navToggle.active span:before,.navToggle.active span:after{top:0}
+.navToggle.active span:before{transform:rotate(45deg)}
+.navToggle.active span:after{transform:rotate(-45deg)}
+.navCloseBtn{display:none;position:absolute;right:-45px;top:10px;}
+
+.navCloseBtn::before,.navCloseBtn::after{content:'';height:2px;width:24px;background:#fff;position:absolute;display:block;border-radius:5px}
+.navCloseBtn::before{transform:rotate(45deg)}
+.navCloseBtn::after{transform:rotate(-45deg)}
+
+@media screen and (max-width:540px){
+nav{position:fixed;left:-300px;top:0;bottom:0;background:#000;width: 200px;}
+nav::before{position:fixed;left:0;top:0; bottom:0;content:'';background:rgba(0,0,0,0.7);z-index:-1;}
+.navToggle{margin-right:15px; display:flex;display:-webkit-flex;}
+nav.active{left:0;}
+nav.active::before{width:100%;}
+nav ul{display: block;}
+nav ul li a{justify-content: flex-start;}
+.navCloseBtn{display:flex;display:-webkit-flex;align-items: center;justify-content: center;width:40px;height:40px;}
+}
